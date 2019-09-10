@@ -4,8 +4,8 @@ services:
 
   tutum-helloworld:
     image: tutum/hello-world
-    ports:
-      - 50080:80
+    # ports:
+    #   - 50080:80
     networks:
       - proxy
     labels:
