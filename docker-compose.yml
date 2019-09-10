@@ -11,13 +11,13 @@ services:
     labels:
       # - "traefik.backend=foo"
       - "traefik.port=80"
-      - "traefik.protocol=https"
+      - "traefik.protocol=http"
       - "traefik.weight=10"
       - "traefik.enable=true"
       - "traefik.frontend.rule=Host:cftest.louislabs.com"
       - "traefik.frontend.passHostHeader=true"
       - "traefik.frontend.priority=10"
-      - "traefik.frontend.entryPoints=http,https"
+      - "traefik.frontend.entryPoints=http"
       - "traefik.docker.network=proxy"
 
     container_name: tutum-helloworld
